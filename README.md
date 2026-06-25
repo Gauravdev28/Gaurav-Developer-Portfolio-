@@ -1,40 +1,44 @@
 # 🌌 Gaurav Agarwal — 3D Developer Portfolio
 
-Welcome to my premium, award-style 3D developer portfolio! This project showcases my skills, projects, achievements, and experience as an AI & Machine Learning student using state-of-the-art web technologies and cinematic 3D graphics.
+Welcome to my premium, award-style 3D developer portfolio! This project showcases my skills, projects, certifications, and academic journey as a B.Tech student in Artificial Intelligence & Machine Learning using modern web technologies and immersive 3D graphics.
 
 ---
 
 ## ✨ Features & Sections
 
-1. **🚀 Hero Scene**: A fullscreen immersive Three.js/React Three Fiber (R3F) canvas featuring a floating 3D laptop, a holographic rotating AI core (icosahedron with custom distortion material), custom particle fields, starfield background, and mouse parallax. Includes a dynamic typing headline: *"Hi, I'm Gaurav Agarwal" | "AI & Machine Learning Developer"*.
-2. **👤 About Me**: A sleek glassmorphism card highlighting my education at **ITM University Gwalior** (B.Tech AI/ML, 2nd Year) and passion for artificial intelligence, surrounded by orbiting 3D technology icons.
-3. **⚡ Skills Grid**: Interactive 3D skill cards with tilt-on-hover effects and custom neon glows representing proficiency in Python, C++, HTML, CSS, JavaScript, React, Git, GitHub, Machine Learning, and DSA.
-4. **📁 Projects Showcase**: Premium tilt cards for projects like:
-   - **Employee Management System**
-   - **Mini Chatbot**
-   - **ATM Machine Simulator**
-   - **Smart Calculator**
-   - **Interactive Portfolio Website**
-   - *Future AI Projects*
-5. **🏆 Timeline & Achievements**: An interactive vertical timeline driven by GSAP animations, showcasing hackathons, certifications, campus activities, and workshops.
-6. **📊 GitHub Analytics**: Dynamically embedded GitHub statistics showing contributions, top repositories, top languages, and activity streaks.
-7. **✉️ Contact Form**: A fully validated, modern contact form built with React Hook Form and Zod validation, styled with custom glassmorphism.
+1. **🚀 Hero Scene**: A fullscreen immersive Three.js/React Three Fiber (R3F) canvas featuring a floating 3D laptop, rotating AI components, particle effects, and mouse parallax. Includes typing headlines introducing my roles as an **AIML Student, Frontend Developer & Freelancer**.
+2. **👤 About Me**: A glassmorphism details card highlighting my study at **ITM University, Gwalior** (B.Tech in Artificial Intelligence & Machine Learning, 2nd Year).
+3. **⚡ Interactive Skills**: Skill cards with hover tilts, custom glows, and status details covering:
+   - **Web Development**: HTML, CSS, JavaScript
+   - **Programming**: C, C++, Python (Daily driver)
+   - **AI & ML**: Prompt Engineering
+   - **Core**: Data Structures & Algorithms (DSA)
+   - **Tools**: Git & GitHub, Copilot, Antigravity (Google's agentic coder), Cursor, IBM BOB
+4. **📁 Projects Showcase**: Premium tilt cards highlighting shipped projects:
+   - **Employee Management System**: Python & JSON CRUD desktop platform designed for departmental tracking, local file operations, and data validation.
+   - **IEEE Hackathon Website**: A responsive web portal created for a college hackathon with registration controls, countdowns, and schedule boards.
+5. **🏆 Journey Timeline**: A clean, animated vertical journey history showcasing:
+   - **Jun 2026**: Introduction to Generative AI — Skill India (Professional Certification)
+   - **2026**: Microsoft Skill Fest Badge (Award for cloud configs & diagnostics)
+   - **2026**: CISCO Python Essentials I (Professional Certification)
+   - **Jan 2026**: Campus Outreach Intern — Pregrad (Internship & coordination)
+   - **2025**: B.Tech AI & ML — ITM University Gwalior (Educational start)
+6. **✉️ Contact Form**: A modern, client-validated contact form powered by Zod and React Hook Form with glassmorphism layout controls.
 
 ---
 
 ## 🎨 Visual System & Design Aesthetics
 
-- **Theme**: Premium dark mode theme using deep space colors (`#000010` background) transitioning into glowing indigo/cyan gradients.
-- **Accents**: Neon blue (`#00E5FF`) and neon purple (`#A855F7`) interactive highlights.
-- **Glassmorphism**: High-end styling using `backdrop-blur-xl bg-white/5 border border-white/10` with custom hover neon rings.
-- **Typography**: Space Grotesk (headings) and Inter (body copy) loaded locally for optimal performance.
+- **Theme**: Dark mode interface designed using custom dark space indigo-black backgrounds, neon blue, and neon purple accents.
+- **Glassmorphism**: Backdrop blur elements with border reflections and neon hover halos.
+- **Typography**: Space Grotesk (headings) and Inter (body) imported locally.
 
 ---
 
 ## 🛠️ Tech Stack & Architecture
 
 - **Framework**: [TanStack Start](https://tanstack.com/router/v1/docs/start/overview) (React 19 Server-Side Rendering Framework)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) & Vanilla CSS variables
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) & CSS variables
 - **3D Graphics**: [Three.js](https://threejs.org/), [@react-three/fiber](https://r3f.docs.pmnd.rs/getting-started/introduction), [@react-three/drei](https://github.com/pmndrs/drei)
 - **Animations**: [GSAP](https://greensock.com/gsap/) (ScrollTrigger) & [Framer Motion](https://www.framer.com/motion/)
 - **Forms & Validation**: [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
@@ -43,10 +47,10 @@ Welcome to my premium, award-style 3D developer portfolio! This project showcase
 
 ## 🚀 Getting Started
 
-To run this portfolio website locally on your computer, follow these steps:
+To run this portfolio website locally, follow these steps:
 
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed (v18 or higher is recommended) or [Bun](https://bun.sh/).
+Make sure you have [Node.js](https://nodejs.org/) (v18 or higher) or [Bun](https://bun.sh/) installed.
 
 ### Installation
 1. Clone the repository:
@@ -58,7 +62,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed (v18 or higher is re
 2. Install dependencies:
    ```bash
    npm install
-   # or if you use bun
+   # or if using bun
    bun install
    ```
 
@@ -69,13 +73,13 @@ npm run dev
 # or
 bun dev
 ```
-Open your browser and navigate to the local server URL (usually **`http://localhost:8080`** or the fallback port printed in your terminal).
+Open your browser to the local server URL printed in your terminal (typically `http://localhost:8080` or next available port).
 
 ### Building for Production
-To build the project for production:
+To build the production bundle:
 ```bash
 npm run build
 # or
 bun run build
 ```
-This compiles the application and optimizes assets using Nitro.
+This builds and optimizes the server and client bundles using Vite and Nitro.
