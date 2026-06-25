@@ -14,25 +14,6 @@ import { useIsMobile, useReducedMotion } from "@/hooks/useReducedMotion";
 const HeroScene = lazy(() => import("@/components/three/HeroScene"));
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Gaurav Developer Portfolio" },
-      {
-        name: "description",
-        content:
-          "Portfolio of Gaurav Agarwal — B.Tech AIML student, Frontend Developer, and Freelancer.",
-      },
-      { name: "theme-color", content: "#f6f5f0" },
-      { property: "og:title", content: "Gaurav Developer Portfolio" },
-      {
-        property: "og:description",
-        content:
-          "Cinematic 3D portfolio of a frontend developer, freelancer, and AIML student.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
   component: Index,
 });
 
