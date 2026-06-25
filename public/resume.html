@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Agarwal — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-text-primary: #111827;
+      --color-text-secondary: #4b5563;
+      --color-accent: #059669; /* Emerald Green matching theme */
+      --color-border: #e5e7eb;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--color-text-primary);
+      line-height: 1.5;
+      background-color: #ffffff;
+      padding: 2.5rem 2rem;
+    }
+    
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    
+    /* Header layout */
+    header {
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    
+    .header-left h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--color-text-primary);
+    }
+    
+    .header-left h2 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--color-accent);
+      margin-top: 0.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    .header-right {
+      text-align: right;
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+    
+    .header-right a {
+      color: var(--color-text-primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .header-right a:hover {
+      text-decoration: underline;
+      color: var(--color-accent);
+    }
+    
+    /* Sections layout */
+    section {
+      margin-bottom: 1.75rem;
+    }
+    
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-primary);
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 0.35rem;
+      margin-bottom: 0.85rem;
+    }
+    
+    /* Experince & Education blocks */
+    .item {
+      margin-bottom: 1rem;
+    }
+    
+    .item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--color-text-primary);
+    }
+    
+    .item-subtitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.88rem;
+      color: var(--color-accent);
+      font-weight: 500;
+      margin-top: 0.1rem;
+      margin-bottom: 0.35rem;
+    }
+    
+    .item-date {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      font-weight: 400;
+    }
+    
+    .item-body {
+      font-size: 0.88rem;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+    
+    .item-body ul {
+      margin-left: 1.15rem;
+      margin-top: 0.25rem;
+      list-style-type: disc;
+    }
+    
+    .item-body li {
+      margin-bottom: 0.2rem;
+    }
+    
+    /* Skills Grid layout */
+    .skills-grid {
+      display: grid;
+      grid-template-cols: 120px 1fr;
+      gap: 1.25rem;
+      font-size: 0.88rem;
+      margin-bottom: 0.65rem;
+    }
+    
+    .skills-grid:last-child {
+      margin-bottom: 0;
+    }
+    
+    .skills-label {
+      font-weight: 600;
+      color: var(--color-text-primary);
+    }
+    
+    .skills-values {
+      color: var(--color-text-secondary);
+    }
+    
+    /* Certifications layout */
+    .certs-list {
+      display: grid;
+      grid-template-cols: 1fr 1fr;
+      gap: 0.75rem;
+      font-size: 0.88rem;
+    }
+    
+    .cert-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      background: #f9fafb;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .cert-title {
+      font-weight: 500;
+      color: var(--color-text-primary);
+    }
+    
+    .cert-date {
+      font-size: 0.8rem;
+      color: var(--color-text-secondary);
+      flex-shrink: 0;
+      margin-left: 0.5rem;
+    }
+
+    /* Print media optimization */
+    @media print {
+      body {
+        padding: 0;
+        font-size: 11pt;
+      }
+      .container {
+        max-width: 100%;
+      }
+      .cert-item {
+        background: transparent;
+      }
+      a {
+        color: var(--color-text-primary);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- HEADER -->
+    <header>
+      <div class="header-left">
+        <h1>Gaurav Agarwal</h1>
+        <h2>AIML Student &amp; Frontend Freelancer</h2>
+      </div>
+      <div class="header-right">
+        <div>📍 Gwalior, Madhya Pradesh, India</div>
+        <div>📧 <a href="mailto:gauravagldeveloper28@gmail.com">gauravagldeveloper28@gmail.com</a></div>
+        <div>🔗 <a href="https://github.com/Gauravdev28" target="_blank">github.com/Gauravdev28</a></div>
+        <div>🔗 <a href="https://www.linkedin.com/in/gauravdeveloper" target="_blank">linkedin.com/in/gauravdeveloper</a></div>
+      </div>
+    </header>
+    
+    <!-- EDUCATION -->
+    <section>
+      <div class="section-title">Education</div>
+      <div class="item">
+        <div class="item-header">
+          <span>ITM University, Gwalior</span>
+          <span class="item-date">2025 — Present</span>
+        </div>
+        <div class="item-subtitle">
+          <span>B.Tech in Artificial Intelligence &amp; Machine Learning (2nd Year)</span>
+        </div>
+        <div class="item-body">
+          Focused on intelligent systems, algorithm implementation, and software engineering structures.
+        </div>
+      </div>
+    </section>
+    
+    <!-- EXPERIENCE -->
+    <section>
+      <div class="section-title">Experience</div>
+      
+      <div class="item">
+        <div class="item-header">
+          <span>Pregrad</span>
+          <span class="item-date">Jan 2026 — Present</span>
+        </div>
+        <div class="item-subtitle">
+          <span>Campus Outreach Intern</span>
+        </div>
+        <div class="item-body">
+          <ul>
+            <li>Represented Pregrad on campus, introducing student builders to technical learning modules and workshops.</li>
+            <li>Coordinated outreach pipelines and local student engagement events to foster a community of active coders.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="item">
+        <div class="item-header">
+          <span>Freelance Web Development</span>
+          <span class="item-date">2025 — Present</span>
+        </div>
+        <div class="item-subtitle">
+          <span>Frontend Developer &amp; Freelancer</span>
+        </div>
+        <div class="item-body">
+          <ul>
+            <li>Built and deployed custom-crafted, responsive websites for clients with a focus on speed and accessible design.</li>
+            <li>Translated wireframes and layouts into semantic HTML, CSS, and modern JavaScript web code.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- PROJECTS -->
+    <section>
+      <div class="section-title">Projects</div>
+      
+      <div class="item">
+        <div class="item-header">
+          <span>Employee Management System</span>
+          <span class="item-date">2025</span>
+        </div>
+        <div class="item-subtitle">
+          <span>Python, JSON</span>
+        </div>
+        <div class="item-body">
+          A desktop platform created to manage employee details, departments, and attendance records. Implemented flat-file serialization workflows utilizing Python's JSON modules to handle database structures locally while maintaining data integrity.
+        </div>
+      </div>
+      
+      <div class="item">
+        <div class="item-header">
+          <span>IEEE Hackathon Website</span>
+          <span class="item-date">2025</span>
+        </div>
+        <div class="item-subtitle">
+          <span>HTML, CSS, JavaScript</span>
+        </div>
+        <div class="item-body">
+          A responsive portal built for a college hackathon organized by IEEE. Developed form registration workflows, schedule boards, and countdown scripts optimized to handle high-concurrency client-side registration checks.
+        </div>
+      </div>
+    </section>
+    
+    <!-- SKILLS -->
+    <section>
+      <div class="section-title">Skills &amp; Tools</div>
+      
+      <div class="skills-grid">
+        <div class="skills-label">Web Dev</div>
+        <div class="skills-values">HTML, CSS, JavaScript, Prompt Engineering</div>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skills-label">Languages</div>
+        <div class="skills-values">C, C++, Python</div>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skills-label">Developer Tools</div>
+        <div class="skills-values">Git, GitHub, Copilot, Antigravity, Cursor, IBM BOB</div>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skills-label">Currently Learning</div>
+        <div class="skills-values">Data Structures &amp; Algorithms (DSA)</div>
+      </div>
+    </section>
+    
+    <!-- CERTIFICATIONS & AWARDS -->
+    <section>
+      <div class="section-title">Certifications &amp; Badges</div>
+      <div class="certs-list">
+        
+        <div class="cert-item">
+          <span class="cert-title">Intro to Generative AI — Skill India</span>
+          <span class="cert-date">Jun 2026</span>
+        </div>
+        
+        <div class="cert-item">
+          <span class="cert-title">Microsoft Skill Fest Badge</span>
+          <span class="cert-date">2026</span>
+        </div>
+        
+        <div class="cert-item">
+          <span class="cert-title">CISCO Python Essentials I</span>
+          <span class="cert-date">2026</span>
+        </div>
+        
+      </div>
+    </section>
+    
+  </div>
+</body>
+</html>
